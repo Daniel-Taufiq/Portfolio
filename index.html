@@ -1,26 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Daniel Taufiq</title>
-  </head>
-  <body>
-    <div class="container">
-        <h1>Daniel Taufiq</h1>
-        <h3>Java/Web Developer</h3>
+<head>
+  <title>Personal Portfolio - Bootstrap 5</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body class="bg-light">
 
-        <div class="link-container">
-          <div>
-            <a href="https://github.com/Daniel-Taufiq" target="_blank">GitHub</a>
-            <img src="github-logo.png">
-          </div>
-          <div>
-            <a href="https://www.linkedin.com/in/daniel-taufiq-648476125/" target="_blank">LinkedIn</a>
-            <img id="set" src="LI-In-Bug.png">
+  <nav class="navbar navbar-light fixed-top bg-light shadow-sm">
+    <div class="container-lg">
+      <a class="navbar-brand text-primary fw-bold fs-4" href="#">Portfolio</a>
+      <div class="dropdown">
+        <button class="btn btn-primary btn-primary px-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#home">Home</a></li>
+          <li><a class="dropdown-item" href="#about">About</a></li>
+          <li><a class="dropdown-item" href="#portfolio">Projects</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="home py-5" id="home">
+    <div class="container_lg">
+      <div class="row min-vh-100 align-items-center align-content-center">
+        <div class="col-md-6 mt-5 mt-md-0">
+          <div class="home-img text-center">
+            <img src="img/unnamed2blue2.png" class="rounded-circle mw-100" alt="profile img">
+          </div>  
+        </div>
+        <div class="col-md-6 mt-5 mt-md-0">
+          <div class="home-text">
+            <p class="text-muted mb-1">Hello, My name is Daniel Taufiq and I'm a</p>
+            <h1 class="text-primary text-uppercase fs-1 fw-bold">Java/Web Developer</h1>
+            <!-- <h2 class="fs-4">Daniel Taufiq</h2>
+            <p class="mt-4 text-muted">lorem fdsopf gfjkngfdnkjg g fkjdmgjkf gf gjkf djkg fdkng fdgioruer</p> -->
+            <a href="#portfolio" class="btn btn-primary px-3 mt-3">Projects</a>
           </div>
         </div>
+      </div>
     </div>
-  </body>
+  </section>
+
+  <section class="about py-5" id="about">
+    <div class="container-lg py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">About Me</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about-text">
+            <h3>
+              My Experience
+            </h3 class="fs-4 mb-3">
+            <p class="text-muted">I am a recent computer science graduate from the University of St. Thomas. I have been programming for several years and have developed different types of applications!</p>
+          </div>
+          <div class="row text-center text-uppercase my-3">
+            <div class="col-sm-4">
+              <div class="fact-item">
+                <h4 class="fs-3 fw-bold">5+</h4>
+                <p class="text-muted">Completed Projects</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="fact-item">
+                <h4 class="fs-3 fw-bold">7+</h4>
+                <p class="text-muted">Years Experience</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12 d-flex align-items-center">
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/daniel-taufiq-648476125/" class="text-dark me-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Daniel-Taufiq" class="text-dark me-2"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-5 mt-md-0">
+          <div class="skill-item mb-4">
+            <h3 class="fs-6">Java</h3>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="skill-item mb-4">
+            <h3 class="fs-6">HTML</h3>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="skill-item mb-4">
+            <h3 class="fs-6">CSS</h3>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="skill-item mb-4">
+            <h3 class="fs-6">JavaScript</h3>
+            <div class="progress" style="height: 5px;">
+              <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="50 " aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio bg-white py-5" id="portfolio">
+    <div class="container-lg py-4">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">Projects</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <img src="img/crime.png" class="w-100 img-thumbnail" alt="crime map img">
+            <h3 class="text-capitalize fs-5 my-2">St. Paul Crime Map</h3>
+            <p class="mb-4"><a href="https://daniel-taufiq.github.io/St.-Paul-Crime-Map/" class="text-primary text-decoration-none">Live Demo</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <img src="img/storm.png" class="w-100 img-thumbnail" alt="crime map img">
+            <h3 class="text-capitalize fs-5 my-2">Weather Web App</h3>
+            <p class="mb-4"><a href="https://daniel-taufiq.github.io/WeatherApp/" class="text-primary text-decoration-none">Live Demo</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item">
+            <img src="img/breakout.png" class="w-5 img-thumbnail" alt="crime map img">
+            <h3 class="text-capitalize fs-5 my-2">Breakout</h3>
+            <p class="mb-4"><a href="https://play.unity.com/mg/other/breakout-18" class="text-primary text-decoration-none">Live Demo</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer border-top py-4">
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="m-0 text-center text-muted">&copy 2021</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
