@@ -1,0 +1,54 @@
+:root{
+    --typewriterSpeed: 4s;
+    --typewriterCharacters: 18;
+}
+
+body{
+    font-family: 'Fira Code', 'Source Code Pro', monospace;
+}
+
+.home-text{
+    font-size: clamp(1rem, 3vw + 1rem, 2rem);
+    position: relative;
+    margin-right: 100px;
+}
+
+h1{
+    position: relative;
+    width: max-content;
+}
+
+h1::before,
+h1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+h1::before{
+    background: #F8F9FA;
+    animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+h1::after{
+    width: .125em;
+    background: black;
+    animation: 
+        typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards,
+        blink 700ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
