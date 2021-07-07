@@ -5,6 +5,7 @@
 
 body{
     font-family: 'Fira Code', 'Source Code Pro', monospace;
+    overflow-x:hidden;
 }
 
 .home-text{
